@@ -1,0 +1,82 @@
+<h2>Your reference look, on the arch scroll page</h2>
+<p class="subtitle">Textured off-white paper, brown ink, a flowing script for names and headings, and a classic serif in capitals for the details. Behind the couple there's a soft watercolour wash instead of a hard frame. Same design in all three, only the script font changes. Click the one closest to your reference.</p>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&family=Monsieur+La+Doulaise&family=Great+Vibes&display=swap">
+<style>
+  .pp{width:280px;margin:0 auto;border-radius:24px;padding:28px 18px 24px;text-align:center;color:#5A3A22;font-family:'Cormorant Garamond',serif;box-shadow:0 8px 30px rgba(60,40,20,.14);display:flex;flex-direction:column;align-items:center;gap:10px;
+    background-color:#FAF7F1;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .pp .cap{font:500 12px/1.4 'Cormorant Garamond',serif;letter-spacing:.14em;text-transform:uppercase}
+  .pp .cap i{text-transform:none;font-style:italic;letter-spacing:.02em}
+  .pp .names{font-size:46px;line-height:.95;margin:4px 0 2px}
+  .pp .names .amp{display:block;font-size:40px;margin-top:-2px}
+  .pp .scene{position:relative;width:220px;height:210px}
+  .pp .scene svg{position:absolute;inset:0}
+  .pp .scene img{position:absolute;left:30px;right:30px;bottom:0;width:160px;height:200px;object-fit:contain;object-position:50% 100%}
+  .pp .ww{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:100%;margin-top:6px}
+  .pp .ww .s{font-size:30px;line-height:1}
+  .pp .ww .v{font:500 10.5px/1.5 'Cormorant Garamond',serif;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+  .pp .btn{margin-top:8px;padding:11px 22px;border-radius:999px;background:#5A3A22;color:#FAF7F1;font:500 12px/1 'Cormorant Garamond',serif;letter-spacing:.14em;text-transform:uppercase}
+</style>
+
+<div class="cards">
+  <div class="card" data-choice="pinyon" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="pp">
+        <div class="cap">Save <i>the</i> Date</div>
+        <div class="names" style="font-family:'Pinyon Script',cursive">Tabeer<span class="amp">&amp; Nouman</span></div>
+        <div class="scene">
+          <svg viewBox="0 0 220 210" aria-hidden="true"><path d="M30 120 C 20 70, 60 30, 110 34 C 160 30, 205 60, 196 118 C 192 150, 170 172, 110 170 C 50 172, 34 150, 30 120 Z" fill="#E3DDD3" opacity=".8"/><path d="M50 128 C 46 90, 80 58, 118 62 C 160 62, 184 92, 176 128 Z" fill="#D4DCC6" opacity=".55"/></svg>
+          <img src="/files/couple.png" alt="">
+        </div>
+        <div class="cap" style="font-size:11px">Join us as we begin our forever</div>
+        <div class="ww">
+          <div><div class="s" style="font-family:'Pinyon Script',cursive">When</div><div class="v">Monday, 14<sup>th</sup> Dec 2026</div></div>
+          <div><div class="s" style="font-family:'Pinyon Script',cursive">Where</div><div class="v">Islamabad, Pakistan</div></div>
+        </div>
+        <div class="btn">Directions</div>
+      </div>
+    </div>
+    <div class="card-body"><h3>A · Pinyon Script</h3><p>Elegant copperplate, easy to read. Closest to the "When / Where" in your reference.</p></div>
+  </div>
+
+  <div class="card" data-choice="monsieur" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="pp">
+        <div class="cap">Save <i>the</i> Date</div>
+        <div class="names" style="font-family:'Monsieur La Doulaise',cursive;font-size:54px">Tabeer<span class="amp" style="font-size:46px">&amp; Nouman</span></div>
+        <div class="scene">
+          <svg viewBox="0 0 220 210" aria-hidden="true"><path d="M30 120 C 20 70, 60 30, 110 34 C 160 30, 205 60, 196 118 C 192 150, 170 172, 110 170 C 50 172, 34 150, 30 120 Z" fill="#E3DDD3" opacity=".8"/><path d="M50 128 C 46 90, 80 58, 118 62 C 160 62, 184 92, 176 128 Z" fill="#D4DCC6" opacity=".55"/></svg>
+          <img src="/files/couple.png" alt="">
+        </div>
+        <div class="cap" style="font-size:11px">Join us as we begin our forever</div>
+        <div class="ww">
+          <div><div class="s" style="font-family:'Monsieur La Doulaise',cursive;font-size:36px">When</div><div class="v">Monday, 14<sup>th</sup> Dec 2026</div></div>
+          <div><div class="s" style="font-family:'Monsieur La Doulaise',cursive;font-size:36px">Where</div><div class="v">Islamabad, Pakistan</div></div>
+        </div>
+        <div class="btn">Directions</div>
+      </div>
+    </div>
+    <div class="card-body"><h3>B · Monsieur La Doulaise</h3><p>Big swirly capitals like "Alisson &amp; James". Most dramatic, a little harder to read.</p></div>
+  </div>
+
+  <div class="card" data-choice="great-vibes" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="pp">
+        <div class="cap">Save <i>the</i> Date</div>
+        <div class="names" style="font-family:'Great Vibes',cursive;font-size:44px">Tabeer<span class="amp" style="font-size:38px">&amp; Nouman</span></div>
+        <div class="scene">
+          <svg viewBox="0 0 220 210" aria-hidden="true"><path d="M30 120 C 20 70, 60 30, 110 34 C 160 30, 205 60, 196 118 C 192 150, 170 172, 110 170 C 50 172, 34 150, 30 120 Z" fill="#E3DDD3" opacity=".8"/><path d="M50 128 C 46 90, 80 58, 118 62 C 160 62, 184 92, 176 128 Z" fill="#D4DCC6" opacity=".55"/></svg>
+          <img src="/files/couple.png" alt="">
+        </div>
+        <div class="cap" style="font-size:11px">Join us as we begin our forever</div>
+        <div class="ww">
+          <div><div class="s" style="font-family:'Great Vibes',cursive">When</div><div class="v">Monday, 14<sup>th</sup> Dec 2026</div></div>
+          <div><div class="s" style="font-family:'Great Vibes',cursive">Where</div><div class="v">Islamabad, Pakistan</div></div>
+        </div>
+        <div class="btn">Directions</div>
+      </div>
+    </div>
+    <div class="card-body"><h3>C · Great Vibes</h3><p>Rounder and softer, very readable on small phones.</p></div>
+  </div>
+</div>
