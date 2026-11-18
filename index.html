@@ -888,6 +888,24 @@
       font: 600 19px/1.35 var(--serif)
     }
 
+    .facts .key {
+      grid-column: 1 / -1;
+      padding: 12px 16px;
+      border-radius: 16px;
+      background: var(--door);
+      border: 1px solid var(--lav-light)
+    }
+
+    .facts .key dt {
+      color: var(--accent)
+    }
+
+    .facts .key dd {
+      font-size: 24px;
+      line-height: 1.2;
+      color: var(--ink)
+    }
+
     .directions {
       padding: 20px 20px 48px;
       display: flex;
@@ -1459,6 +1477,10 @@
         font-size: 22px
       }
 
+      .facts .key dd {
+        font-size: 30px
+      }
+
       .directions {
         padding-top: 8px
       }
@@ -1600,6 +1622,11 @@
       font-size: 15px;
       line-height: 2;
       font-weight: 400
+    }
+
+    html[lang="ur"] .facts .key dd {
+      font-size: 19px;
+      font-weight: 600
     }
 
     html[lang="ur"] .invite .lead,
@@ -1787,11 +1814,11 @@
           <div class="kicker" data-t="theEvent">The celebration</div>
           <h2 class="title" style="margin:0;font-weight:400" data-t="baraat">Baraat</h2>
           <dl class="facts" style="margin:0">
-            <div>
+            <div class="key">
               <dt data-t="dateLabel">Date</dt>
               <dd id="fDate">Fri, 18 December 2026</dd>
             </div>
-            <div>
+            <div class="key">
               <dt data-t="timeLabel">Time</dt>
               <dd id="fTime">2:00 PM</dd>
             </div>
