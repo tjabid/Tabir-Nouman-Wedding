@@ -2018,6 +2018,8 @@
       appleMapsUrl: 'https://maps.apple/p/bpX2yej0DBfSv7',
       mapsQuery: '33.637506,72.9825087',
       // RSVP contacts (2 to 6); phone is optional, ur is an optional Urdu spelling of the name
+      // set to true to show phone numbers under the names again (Call/WhatsApp buttons work either way)
+      showPhones: false,
       rsvp: [
         { name: 'Tanzil Abid', phone: '+92 320 0093173' },
         { name: 'Taweel Abid', phone: '+92 349 7853436' }
@@ -2125,9 +2127,11 @@
           who.appendChild(el('div', 'c-name', (lang === 'ur' && c.ur) || c.name));
           if (c.phone) {
             const digits = c.phone.replace(/[^\d+]/g, '');
-            const tel = el('a', 'c-phone', c.phone);
-            tel.href = 'tel:' + digits;
-            who.appendChild(tel);
+            if (INVITE.showPhones) {
+              const tel = el('a', 'c-phone', c.phone);
+              tel.href = 'tel:' + digits;
+              who.appendChild(tel);
+            }
             li.appendChild(who);
             const actions = el('div', 'c-actions');
             const call = el('a', 'btn ghost');
