@@ -1,5 +1,5 @@
 const { chromium } = require('playwright');
-const URL = process.env.URL || 'http://localhost:8765/index.html';
+const URL = process.env.URL || 'http://localhost:8765/video/indexVideo.html';
 const FPS = 30, DT = 1000 / FPS;
 (async () => {
   const browser = await chromium.launch();
@@ -9,7 +9,6 @@ const FPS = 30, DT = 1000 / FPS;
   const page = await ctx.newPage();
   await page.clock.install();
   await page.goto(URL, { waitUntil: 'networkidle' });
-  await page.addStyleTag({ content: '.countdown{display:none!important}' });
   await page.evaluate(() => document.fonts.ready);
   await page.clock.pauseAt(await page.evaluate(() => Date.now() + 20));
   await page.evaluate(() => {
